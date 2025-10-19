@@ -2,7 +2,13 @@
 <html>
     <body>
         <form action="./r_conversor.php" method="GET">
-            <label for="nom">Introdueix la quantitat d'euros que vols convertir a dollars: </label><br><br>
+            <label for="moneda">Tria la moneda que vols canviar:</label>
+            <select id="moneda" name="moneda">
+                <option value="euros">Euros</option>
+                <option value="dollars">Dollars</option>
+            </select>
+            
+            <label for="nom">Introdueix la quantitat que vols convertir: </label><br><br>
             <input type="number" id="num" name="num"><br><br>
             <input type="submit" value="Enviar">
         </form>
