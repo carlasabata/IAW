@@ -1,7 +1,7 @@
 <?php
 $preu=$_GET['preu'];
 $iva=$_GET['iva'];
-$resultat=$preu+((0.1*$iva)*$preu);
+$resultat=$preu+($iva*$preu);
 
 if ($iva==4) {
     echo '$resultat';
