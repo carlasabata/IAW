@@ -2,12 +2,13 @@
 $edat=$_GET['maj_edat'];
 $idioma=$_GET['llengua'];
 $moneda=$_GET['mon'];
-#                    ?? ''
+#                    ?? ''     si el valor existeix i no és null assigna el valor
+#                                si no existeix, assigna una cadena buida ('')
 
 # if (idioma=cat & moneda=eur) ----- t'oferim el vi "Les Terrasses" a un preu de 39€.
 # la botiga consta de només 2 productes
 
-# 1h duració
+# 1h duració,     per consultar una cookie: $_COOKIE['nom']
 setcookie("majoredat", $edat, time() + 3600);
 setcookie("idioma", $idioma, time() + 3600);
 setcookie("moneda", $moneda, time() + 3600);
@@ -47,3 +48,4 @@ if ($edat == "no") {
     }
 }
 ?>
+
