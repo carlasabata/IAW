@@ -12,3 +12,5 @@
 [Enunciat funcions predefinides](https://docs.google.com/document/d/1vfRb4PF9tgj0BKMnrzpuIWQFHvrIkQfaz1k2dXeoTZk/edit?tab=t.0#heading=h.gf1vu29nfbfc)
 
 [Enunciat sessions](https://docs.google.com/document/d/1XMle0LZAtH7QxphpvTu2WiVTX7j6WVn_22yibjeD_-c/edit?tab=t.0#heading=h.gf1vu29nfbfc)
+
+[Enunciat cookies i sessions](https://docs.google.com/document/d/1lMz2lHblCrkZuH6Yq_en44e4a_clvHfWbQDM4cIZPfg/edit?tab=t.0#heading=h.gf1vu29nfbfc)
