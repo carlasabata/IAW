@@ -1,16 +1,22 @@
 <?php
 # if comptadors visites = 5 desc=20%
 # "                     " 10 desc = 50 + no ha fet servir el desc previament
-# $des20="Oferta exclusiva! Utilitza el codi BOTIGA20 per obtenir un 20% de descompte en les teves primeres compres a la botiga"
-# $des50="Oferta exclusiva sols per a tu! Utilitza el codi BOTIGA50 per obtenir un 50% de descompte en les teves primeres compres a la botiga"
 
-// Iniciar sessió per poder utilitzar la variable de sessió
+# iniciar sessió per poder utilitzar la variable de sessió
 session_start();
 
-// Comprovar si la variable de sessió ja existeix
+# comprovar si la variable de sessió ja existeix
 if (!isset($_SESSION['comptador'])) {
     $_SESSION['comptador'] = 1; // Primera visita
 } else {
     $_SESSION['comptador']++; // Incrementar el comptador
+}
+
+$missatge="";
+# descompte segons visites
+if ($_SESSION['visites'] == 5 && !$_SESSION['usades']) {
+    $missatge = "Oferta exclusiva! Utilitza el codi BOTIGA20 per obtenir un 20% de descompte.";
+} elseif ($_SESSION['visites'] == 10 && !$_SESSION['usades']) {
+    $missatge = "Oferta exclusiva sols per a tu! Utilitza el codi BOTIGA50 per obtenir un 50% de descompte.";
 }
 ?>
